@@ -13,7 +13,10 @@ const BlogIndex = (props) => {
           title
         }
       }
-      allMarkdownRemark(sort: { fields: [frontmatter___title], order: ASC }) {
+      allMarkdownRemark(
+        sort: { fields: [frontmatter___title], order: ASC },
+        filter: {fileAbsolutePath: {regex: "/\\/guides\\//"}},
+        ) {
         edges {
           node {
             excerpt

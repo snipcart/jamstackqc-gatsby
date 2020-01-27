@@ -54,11 +54,10 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author}</strong> who lives and works in San
-        Francisco building useful things.
+        Écrit <strong>{author}</strong> qui habite à Québec et qui veut être prêt pour une éventuelle épidémie.
         {` `}
         <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
+          Vous ne devriez peut-être pas le suivre sur Twitter.
         </a>
       </p>
     </div>
