@@ -1,8 +1,8 @@
+import "./index.scss";
 import React from "react"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 import { Link, useStaticQuery, graphql } from "gatsby"
 
 const BlogIndex = (props) => {
@@ -41,26 +41,19 @@ const BlogIndex = (props) => {
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <article key={node.fields.slug}>
-              <header>
-                <h3
-                  style={{
-                    marginBottom: rhythm(1 / 4),
-                  }}
-                >
+            <article key={node.fields.slug} className="post">
+              <div className="post-aside">
+                <small>{node.frontmatter.date}</small>
+                <h3 className="post-title">
                   <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
                     {title}
                   </Link>
                 </h3>
-                <small>{node.frontmatter.date}</small>
-              </header>
-              <section>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
+                <p dangerouslySetInnerHTML={{
+                    __html: node.excerpt,
                   }}
                 />
-              </section>
+              </div>
             </article>
           )
         })}

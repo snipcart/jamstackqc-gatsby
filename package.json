@@ -36,6 +36,8 @@
     "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
+    "gatsby-plugin-sass": "^2.1.27",
+    "node-sass": "^4.13.1",
     "prettier": "^1.19.1"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",

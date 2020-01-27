@@ -1,3 +1,4 @@
+import "./layout.scss"
 import React from "react"
 import { Link } from "gatsby"
 
@@ -7,7 +8,7 @@ const Layout = (props) => {
   const { children } = props;
 
   return (
-    <div
+    <div className="main"
       style={{
         marginLeft: `auto`,
         marginRight: `auto`,
@@ -15,7 +16,7 @@ const Layout = (props) => {
         padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
       }}
     >
-      <header><LayoutHeader {...props} /></header>
+      <header className="header"><LayoutHeader {...props} /></header>
       <main>{children}</main>
       <footer>
         © {new Date().getFullYear()}, Built with
