@@ -3,6 +3,7 @@ import React from "react"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Products from "../components/products";
 import { Link, useStaticQuery, graphql } from "gatsby"
 
 const BlogIndex = (props) => {
@@ -26,7 +27,15 @@ const BlogIndex = (props) => {
             frontmatter {
               date(formatString: "MMMM DD, YYYY")
               title
-              description
+              description,
+              products {
+                sku,
+                price,
+                name,
+                image {
+                  publicURL
+                }
+              }
             }
           }
         }
@@ -56,6 +65,7 @@ const BlogIndex = (props) => {
                     __html: node.excerpt,
                   }}
                 />
+                <Products products={node.frontmatter.products} />
               </div>
             </article>
           )

@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Products from "../components/products";
 import { rhythm, scale } from "../utils/typography"
 
 const BlogPostTemplate = ({ data, location, pageContext }) => {
@@ -43,6 +44,9 @@ const BlogPostTemplate = ({ data, location, pageContext }) => {
           </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
+
+        <Products products={post.frontmatter.products} />
+
         <hr
           style={{
             marginBottom: rhythm(1),
@@ -99,7 +103,15 @@ query BlogPostBySlug($slug: String!) {
     frontmatter {
       title
       date(formatString: "MMMM DD, YYYY")
-      description
+      description,
+      products {
+        sku,
+        name,
+        price,
+        image {
+          publicURL
+        }
+      }
     }
   }
 }
