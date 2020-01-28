@@ -1,0 +1,11 @@
+@import "../styles/colors.scss";
+
+.buy-button {
+    border: none;
+    background-color: $primary-highlight;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: "Centenario v0.1";
+    color: $dark-bg;
+    cursor: pointer;
+}

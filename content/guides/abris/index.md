@@ -15,7 +15,7 @@ products:
      image: "./wood-planks.svg"
     -
      sku: "fuel"
-     name: "Esscence"
+     name: "Essence"
      price: 299.99
      image: "./fuel.svg"
 ---

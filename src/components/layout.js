@@ -1,4 +1,5 @@
 import "./layout.scss"
+import "./snipcart.scss"
 import React from "react"
 import { Link } from "gatsby"
 

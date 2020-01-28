@@ -1,0 +1,211 @@
+@import '../styles/colors.scss';
+
+.snipcart {
+    &-modal {
+        background-color: $dark-bg;
+    }
+
+    &-cart-header {
+        background-color: $dark-bg;
+    }
+
+    &-cart__content {
+        background-color: $dark-bg;
+    }
+    
+    &-item-line {
+        background-color: $light-bg;
+        box-shadow: 0 0 8px transparentize($color: $primary-highlight, $amount: 0.6);
+        border-radius: 8px;
+    }
+
+    &-item-quantity__quantity {
+         background-color: transparent;
+         border: none;
+         color: $text-main;
+    }
+
+    &__font--secondary {
+        font-family: "Centenario v0.1";
+        font-size: 24px;
+    }
+    
+    &__font--black {
+        color: $primary-highlight;
+    }
+
+    &__font--bold {
+        color: $primary-highlight;
+    }
+
+    &__font--subtitle {
+        color: $text-main;
+    }
+
+    &-form__label {
+        color: $text-main;
+    }
+
+    &-item-quantity__button {
+        svg path {
+            fill: $text-main;
+        }
+    }
+
+    &__button--icon {
+        border: none;
+    }
+
+    &-item-quantity__label {
+        color: $text-main;
+    }
+
+    &-input {
+        background-color: $dark-bg;
+        border: solid 1px $dark-bg;
+
+        &:focus-within {
+            border: solid 1px $primary-highlight;
+            box-shadow: 0 0 8px transparentize($color: $primary-highlight, $amount: 0.6);
+        }
+    }
+
+    &-form__select {
+        background-color: $dark-bg;
+        border: solid 1px $dark-bg;
+        &:focus-within {
+            border: solid 1px $primary-highlight;
+            box-shadow: 0 0 8px transparentize($color: $primary-highlight, $amount: 0.6);
+        }
+    }
+
+    &-typeahead__suggestions {
+        background-color: $dark-bg;
+        border: solid 1px $primary-highlight;
+    }
+
+    &-typeahead__suggestion--active {
+        background-color: lighten($color: $dark-bg, $amount: 20%);;
+    }
+
+    &-discount-box {
+        background-color: $dark-bg;
+
+        &__button {
+            border: solid 1px $primary-highlight;
+        }
+
+        &__form {
+            background-color: $dark-bg;
+            border: solid 1px $primary-highlight;
+        }
+
+        &__submit {
+            color: $text-main;
+        }
+    }
+    
+
+    &-cart-button--highlight {
+        background-color: $primary-highlight;
+        color: $dark-bg;
+        background-image: none;
+    }
+
+    &-featured-payment-methods__title {
+        background: $dark-bg;
+    }
+
+    &-cart-summary-fees {
+        color: $text-main;
+    }
+
+    &__icon--blue-dark, &__icon--blue-light {
+        path {
+            fill: $primary-highlight;
+        }
+    }
+
+    &-modal__close {
+        color: $text-main;
+    }
+
+    &__box {
+        background-color: $light-bg;
+    }
+
+    &-form {
+        box-shadow: 0 0 8px transparentize($color: $primary-highlight, $amount: 0.6);
+    }
+
+    &__box--badge {
+        border: solid 1px $dark-bg;
+        background: none;
+        background-color: lighten($color: $primary-highlight, $amount: 20%);
+        color: $dark-bg;
+    }
+
+    &__box--badge-highlight {
+        background-color: $primary-highlight;
+        color: $dark-bg;
+    }
+
+    &-cart-summary {
+        background-color: $light-bg;
+
+        &__content {
+            background-color: $light-bg;
+        }
+    }
+
+    &-cart-summary-item {
+        color: $text-main;
+    }
+
+    &__actions--link {
+        color: $primary-highlight;
+    }
+}
+
+
+
+.snipcart-cart--edit .snipcart-item-list,
+.snipcart-cart__secondary-header,
+.snipcart-cart--edit .snipcart-cart__footer {
+    background: $dark-bg;
+}
+
+.snipcart-item-line--cart-edit {
+    border-bottom: none;
+    margin: 16px 32px;
+    padding: 24px;
+}
+
+.snipcart-cart--edit .snipcart-discount-box, .snipcart-discount-box--white {
+    background-color: $light-bg;
+}
+
+.snipcart-input--no-style:focus-within {
+    border: none;
+    box-shadow: none;
+}
+.snipcart-discount-box__cancel .snipcart__font--std .snipcart__font--secondary {
+    background-color: $dark-bg;
+}
+
+.snipcart-discount-box__form-container {
+    background-color: $dark-bg;
+}
+
+.snipcart-cart-summary__overlay {
+    background-color: transparentize($color: lighten($color: $dark-bg, $amount: 20%), $amount: 0.2);
+}
+
+.snipcart-cart-summary--edit.snipcart-modal__container {
+    box-shadow: none;
+}
+
+.snipcart-cart--edit,
+.snipcart-cart--edit .snipcart-cart__content {
+    background-color: $dark-bg;
+}
