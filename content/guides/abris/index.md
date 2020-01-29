@@ -2,6 +2,10 @@
 title: Rester à l'abris
 date: "2020-01-25T22:12:03.284Z"
 description: Le but de ce guide est de vous apprendre comment vous bâtir et entretenir un abris sécuritaire.
+category: Example Category
+tags:
+    - construction
+    - javascript
 products:
     -
      sku: "toolbox"

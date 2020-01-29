@@ -2,6 +2,10 @@
 title: Rester en santé
 date: "2020-01-26T22:12:03.284Z"
 description: Le but de ce guide est de vous apprendre les essentiels afin de pouvoir rester en santé et se guérir en cas de maladie.
+category: Example Category
+tags:
+    - construction
+    - javascript
 products:
     -
      sku: "medkit"

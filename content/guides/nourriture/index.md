@@ -2,6 +2,10 @@
 title: Se nourrir
 date: "2020-01-26T22:12:03.284Z"
 description: Le but de ce guide est de vous apprendre les essentiels afin de pouvoir vous nourrir convenablement en cas d'épidémie.
+category: Example Category
+tags:
+    - construction
+    - javascript
 products:
     -
      sku: "cutlery"

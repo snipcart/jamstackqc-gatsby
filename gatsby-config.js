@@ -13,13 +13,6 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         path: `${__dirname}/content/guides`,
         name: `guides`,
       },
@@ -84,5 +77,17 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
+    {
+      resolve: "gatsby-plugin-categories",
+      options: {
+        templatePath: `${__dirname}/src/templates/category.js`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-tags",
+      options: {
+        templatePath: `${__dirname}/src/templates/tag.js`,
+      },
+    },
   ],
 }
